@@ -7,7 +7,7 @@ import Ionicons from 'react-native-vector-icons/Ionicons';
 import styles from './styles'
 import { COLORS } from '../../styles/colors/colors/';
 
-import { LogInButton, SuggestButton, ButtonLogin } from '../../customObjects/buttons';
+import {SuggestButton, ButtonLogin } from '../../customObjects/buttons';
 
 
 
@@ -40,9 +40,6 @@ const LogIn = () => {
     <View style={styles.container}>
         <View style={styles.header}>
         <View style={[styles.headerForm]}></View>
-        {/* <View style={[styles.headerForm2]}></View>
-        <View style={[styles.headerForm3]}></View>
-        <View style={[styles.headerForm4]}></View> */}
         <View style={styles.containerTitle}>
         <Image source={require('../../assets/image/logo/Logo.png')} style={styles.title} />
         </View>

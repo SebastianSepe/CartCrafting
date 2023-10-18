@@ -16,6 +16,7 @@ export default styles = StyleSheet.create({
     alignItems: "center",
     justifyContent: "flex-end",
     zIndex: -6,
+    //marginBottom: 10,
     //position: "relative",
 
   },
@@ -104,6 +105,7 @@ export default styles = StyleSheet.create({
     width: "100%",
     justifyContent: "center",
     alignItems: "center",
+    r
   },
 
 
