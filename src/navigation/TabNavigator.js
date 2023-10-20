@@ -1,13 +1,14 @@
 import React from 'react';
 import { View, StyleSheet } from 'react-native';
 import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
-import { Ionicons } from '@expo/vector-icons';
+import Ionicons from "react-native-vector-icons/Ionicons";
 import { COLORS } from '../styles/colors/colors';
 
 import HomeScreen from '../screens/HomeScreen';
 import SearchScreen from '../screens/SearchScreen';
 import FavoriteScreen from '../screens/FavoriteScreen';
 import CartScreen from '../screens/CartScreen';
+
 
 const Tab = createBottomTabNavigator();
 
@@ -29,7 +30,7 @@ const TabNavigator = () => {
         component={HomeScreen}
         options={{
           tabBarIcon: ({ focused }) => (
-            <Ionicons name="home" color={focused ? iconColorPrimary : iconColorSecondary} size={iconSize} />
+            <Ionicons name="home" size={32} color={focused ? iconColorPrimary : iconColorSecondary} />
           ),
         }}
       />
@@ -69,8 +70,8 @@ const styles = StyleSheet.create({
     position: 'absolute',
     bottom: 40,
     left: 20,
-    right: 20,
-    height: 120,
+    right: 20, 
+    height: 60,
     backgroundColor: 'white',
     justifyContent: 'center', // Center the icons vertically
     borderRadius: 15,
